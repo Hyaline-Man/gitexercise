@@ -1,0 +1,3 @@
+** git status 显示中文文件名乱码问题
+git config --global core.quotepath false
+
