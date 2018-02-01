@@ -1,0 +1,9 @@
+{
+    "NAME": "qqindex",
+    "INTERVAL": "-1",
+    "TEMPLATE": {
+        "CUSTOMKEYS": [],
+        "TEMPLATENAME": "通用模板",
+        "DEPTH_qqindexdetail": "_$X_//*[@id='navBeta']_$REG_(http://[\\w]+\\.qq\\.com[/]?)\"_$FILTER_SET_URL_EXCLUSION_$NULL_"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "NAME": "baidutiebadetail",
+    "INTERVAL": "-1",
+    "TEMPLATE": {
+        "CUSTOMKEYS": [{
+            "DBNAME": "DCForum",
+            "IR_BBSNUM": "BLOCK_$R_post_no&quot;:(\\d+),&quot;type[^>]+ >",
+            "IR_URLTIME": "BLOCK_$R_(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2})[^:]_$TIME_yyyy.MM.dd HH:mm:ss",
+            "IR_URLTITLE": "_$R_class=\"core_title_txt(?:(?!title=)[\\w\\W])*title=\"([^\"]*)",
+            "IR_SITENAME": "百度贴吧",
+            "IR_CONTENT": "BLOCK_$R_<cc>((?:(?!</cc>)[\\w\\W])*)",
+            "IR_GROUPNAME": "国内论坛",
+            "IR_AUTHORS": "BLOCK_$R_alog-group=\"p_author\"[^>]*>([^<]*)",
+            "BLOCK": "_$R_(<(div)(?:(?!data-field)[^>])+data-field=(?:(?!blockNum)[^>])+>(?>(?<o>)<\\2[^>]*>|(?<-o>)<\\\\?/\\2>|(?!<\\\\?/?\\2)[\\w\\W])+(?(o)(?!))<\\\\?/\\2>)_$NULL_"
+        }],
+        "BREADTH": "_$R_l_pager pager_theme_4 pb_list_pager(?:(?!下一页)[\\w\\W])*\"([^\"]*)\">下一页",
+        "TEMPLATENAME": "",
+    }
+}
