@@ -2,6 +2,8 @@ rebase分支更改
 master分支更改
 merge操作
 
+<<<<<<< HEAD
 master分支更新
 rebase分支更新
 rebase操作
+rebase分支更新
